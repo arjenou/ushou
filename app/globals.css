@@ -2,20 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
+/* === 滚动行为和页面最小高度设定 === */
+html,
+body {
   scroll-behavior: smooth;
+  height: auto;
+  min-height: 100%;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 body {
   font-family: 'Noto Sans JP', sans-serif;
 }
 
+/* === 自定义工具类 === */
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+
+  /* 用于所有锚点 section，防止被 fixed header 遮挡 */
+  .scroll-offset {
+    scroll-margin-top: 6rem;
+    /* 大约对应 fixed navbar 高度 */
+  }
 }
 
+/* === Tailwind base token 设定 === */
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -87,9 +101,7 @@ body {
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
-}
 
-@layer base {
   * {
     @apply border-border;
   }

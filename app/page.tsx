@@ -202,7 +202,7 @@ export default function HomePage() {
       </section>
 
       {/* Contact Information */}
-      <section id="contact" className="py-20 bg-gray-900 text-white">
+      <section id="contact" className="scroll-offset py-20 bg-gray-900 text-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Contact US!</h2>
