@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import LiveStreamCarousel from "./components/livestream-carousel"
 import TalentCarousel from "./components/talent-carousel"
 import CaseStudiesCarousel from "./components/case-studies-carousel"
 import Navigation from "./components/navigation"
@@ -176,6 +177,16 @@ export default function HomePage() {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">所属アーティスト</h2>
           </div>
           <TalentCarousel />
+        </div>
+      </section>
+
+      {/* Live Stream Showcase */}
+      <section className="py-20 bg-gray-900">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-white mb-4">ライブ配信の様子</h2>
+          </div>
+          <LiveStreamCarousel />
         </div>
       </section>
 
