@@ -7,50 +7,50 @@ import Image from "next/image"
 
 // 实际艺人数据
 const talents = [
+  // {
+  //   id: 1,
+  //   name: "陽葵ひまり",
+  //   image: "/images/artists/artist1.jpg",
+  //   category: "ライバー",
+  // },
   {
     id: 1,
-    name: "陽葵ひまり",
-    image: "/images/artists/artist1.jpg",
-    category: "ライバー",
-  },
-  {
-    id: 2,
     name: "ANTON",
     image: "/images/artists/artist2.jpg",
     category: "ポッドキャスター",
   },
   {
-    id: 3,
+    id: 2,
     name: "hinoenma",
     image: "/images/artists/artist3.jpg",
     category: "モデル",
   },
   {
-    id: 4,
+    id: 3,
     name: "Kento",
     image: "/images/artists/artist4.jpg",
     category: "インフルエンサー",
   },
   {
-    id: 5,
+    id: 4,
     name: "Yuki",
     image: "/images/artists/artist5.jpg",
     category: "ライバー",
   },
+  // {
+  //   id: 6,
+  //   name: "Ryo",
+  //   image: "/images/artists/artist6.jpg",
+  //   category: "モデル",
+  // },
   {
-    id: 6,
-    name: "Ryo",
-    image: "/images/artists/artist6.jpg",
-    category: "モデル",
-  },
-  {
-    id: 7,
+    id: 5,
     name: "Mika",
     image: "/images/artists/artist7.jpg",
     category: "ダンサー",
   },
   {
-    id: 8,
+    id: 6,
     name: "Mika",
     image: "/images/artists/artist8.jpg",
     category: "ダンサー",

@@ -1,62 +1,95 @@
 "use client"
 
 import { Card, CardContent } from "@/components/ui/card"
-import { ArrowDown, Users, BookOpen, Play, BarChart3 } from "lucide-react"
+import { ArrowRight, ArrowDown, Users, Package, Settings, Play, HeadphonesIcon, BarChart3 } from "lucide-react"
 
 export default function LiveCommerceFlow() {
   const flowSteps = [
     {
       icon: Users,
-      title: "交流会",
-      description: "業界関係者とのネットワーキング",
+      title: "ライバー分析",
+      description: "配信者の特性と強みを詳細分析",
       color: "bg-purple-500",
     },
     {
-      icon: BookOpen,
-      title: "テクニック講習",
-      description: "ライブコマースの手法を学習",
+      icon: Package,
+      title: "商品分析",
+      description: "市場動向と商品特性の徹底調査",
       color: "bg-blue-500",
     },
     {
-      icon: Play,
-      title: "配信実演",
-      description: "実践的なライブ配信トレーニング",
+      icon: Settings,
+      title: "販売準備",
+      description: "配信環境とセールス戦略の構築",
       color: "bg-green-500",
     },
     {
-      icon: BarChart3,
-      title: "成果測定",
-      description: "データ分析による効果検証",
+      icon: Play,
+      title: "ライブ運営",
+      description: "リアルタイム配信サポートと運営",
       color: "bg-orange-500",
+    },
+    {
+      icon: HeadphonesIcon,
+      title: "アフターフォロー",
+      description: "顧客満足度向上とリピート促進",
+      color: "bg-pink-500",
+    },
+    {
+      icon: BarChart3,
+      title: "データ分析",
+      description: "成果測定と次回配信への改善提案",
+      color: "bg-cyan-500",
     },
   ]
 
   return (
-    <div className="max-w-4xl mx-auto">
-      <div className="space-y-8">
-        {flowSteps.map((step, index) => (
+    <div className="max-w-6xl mx-auto">
+      {/* 2行3列のグリッドレイアウト */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+        {/* 第1行 */}
+        {flowSteps.slice(0, 3).map((step, index) => (
           <div key={index} className="relative">
-            <div className="flex items-center space-x-6">
-              {/* Icon Circle */}
-              <div className={`w-20 h-20 rounded-full ${step.color} flex items-center justify-center flex-shrink-0`}>
-                <step.icon className="h-10 w-10 text-white" />
-              </div>
+            <Card className="h-48 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2">
+              <CardContent className="p-6 h-full flex flex-col items-center text-center">
+                {/* ステップ番号 */}
+                <div className="text-sm text-gray-500 mb-2">STEP {index + 1}</div>
 
-              {/* Content */}
-              <Card className="flex-1 hover:shadow-lg transition-shadow h-20">
-                <CardContent className="p-6 h-full flex flex-col justify-center">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2 whitespace-nowrap">{step.title}</h3>
-                  <p className="text-gray-600 whitespace-nowrap">{step.description}</p>
-                </CardContent>
-              </Card>
-            </div>
+                {/* アイコン */}
+                <div className={`w-16 h-16 rounded-full ${step.color} flex items-center justify-center mb-4`}>
+                  <step.icon className="h-8 w-8 text-white" />
+                </div>
 
-            {/* Arrow Down */}
-            {index < flowSteps.length - 1 && (
-              <div className="flex justify-center my-4">
-                <ArrowDown className="h-8 w-8 text-gray-400" />
-              </div>
-            )}
+                {/* タイトル */}
+                <h3 className="text-lg font-bold text-gray-900 mb-2">{step.title}</h3>
+
+                {/* 説明 */}
+                <p className="text-gray-600 text-sm leading-relaxed flex-1 flex items-center">{step.description}</p>
+              </CardContent>
+            </Card>
+          </div>
+        ))}
+
+        {/* 第2行 */}
+        {flowSteps.slice(3, 6).map((step, index) => (
+          <div key={index + 3} className="relative md:order-last" style={{ order: 6 - index }}>
+            <Card className="h-48 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2">
+              <CardContent className="p-6 h-full flex flex-col items-center text-center">
+                {/* ステップ番号 */}
+                <div className="text-sm text-gray-500 mb-2">STEP {index + 4}</div>
+
+                {/* アイコン */}
+                <div className={`w-16 h-16 rounded-full ${step.color} flex items-center justify-center mb-4`}>
+                  <step.icon className="h-8 w-8 text-white" />
+                </div>
+
+                {/* タイトル */}
+                <h3 className="text-lg font-bold text-gray-900 mb-2">{step.title}</h3>
+
+                {/* 説明 */}
+                <p className="text-gray-600 text-sm leading-relaxed flex-1 flex items-center">{step.description}</p>
+              </CardContent>
+            </Card>
           </div>
         ))}
       </div>

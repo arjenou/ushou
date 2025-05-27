@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import TalentCarousel from "./components/talent-carousel"
-import LiveStreamCarousel from "./components/livestream-carousel"
+import CaseStudiesCarousel from "./components/case-studies-carousel"
 import Navigation from "./components/navigation"
 import ServiceProcess from "./components/service-process"
 import LiveCommerceFlow from "./components/live-commerce-flow"
@@ -25,11 +25,11 @@ export default function HomePage() {
               <span className="text-cyan-400">You Now!</span>
             </h1>
             <h2 className="font-bold mb-8 text-gray-800">
-              <span className="block text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl whitespace-nowrap">
+              <span className="block text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl whitespace-nowrap">
                 ライブ配信の<span className="text-pink-500">プロフェッショナル</span>
               </span>
             </h2>
-            <p className="text-xl md:text-2xl text-gray-700 mb-12 max-w-3xl">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-12 max-w-3xl">
               私たちは、TikTok Liveの配信者向けに専門的な運営管理サービスを<span className="whitespace-nowrap">提供し、</span>配信者の人気や収益の向上をサポートいたします。
             </p>
             <Button
@@ -140,7 +140,7 @@ export default function HomePage() {
       </section>
 
       {/* Creator Network */}
-      <section className="py-20 bg-white">
+      {/* <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">クリエイターネットワーク</h2>
@@ -167,7 +167,7 @@ export default function HomePage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Talent Showcase Carousel */}
       <section className="py-20 bg-gradient-to-br from-purple-50 to-pink-50">
@@ -179,57 +179,13 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Live Stream Showcase */}
-      <section className="py-20 bg-gray-900">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">ライブ配信の様子</h2>
-          </div>
-          <LiveStreamCarousel />
-        </div>
-      </section>
-
-      {/* Case Studies - Simplified */}
+      {/* Case Studies - Carousel */}
       <section id="case-studies" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">事例紹介</h2>
           </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <CardTitle>陽葵ひまり</CardTitle>
-                <CardDescription>ライブ配信事例</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 mb-4">ゼロからスタートで短期間でイベント上位進出</p>
-                <Badge className="bg-green-100 text-green-800">事例紹介</Badge>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <CardTitle>ANTON</CardTitle>
-                <CardDescription>ブランドコラボレーション</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 mb-4">モデル×自社ブランドの認知度向上</p>
-                <Badge className="bg-blue-100 text-blue-800">ブランド連携</Badge>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <CardTitle>hinoenma</CardTitle>
-                <CardDescription>マルチプラットフォーム</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 mb-4">複数プラットフォームでの総合成長支援</p>
-                <Badge className="bg-purple-100 text-purple-800">総合支援</Badge>
-              </CardContent>
-            </Card>
-          </div>
+          <CaseStudiesCarousel />
         </div>
       </section>
 
@@ -237,7 +193,9 @@ export default function HomePage() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">ライブコマース支援フロー</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              ライブコマース<span className="whitespace-nowrap">支援フロー</span>
+            </h2>
           </div>
           <LiveCommerceFlow />
         </div>
@@ -265,12 +223,6 @@ export default function HomePage() {
                 <a href="mailto:contact@younow.jp" className="text-lg text-cyan-300 hover:text-cyan-200">
                   sqr1030@gmail.com
                 </a>
-              </div>
-
-              <div className="text-center">
-                <Button size="lg" className="bg-cyan-400 hover:bg-cyan-500 text-white text-lg px-8 py-4 rounded-full">
-                  お問い合わせ
-                </Button>
               </div>
             </div>
           </div>
