@@ -253,7 +253,7 @@ export default function HomePage() {
               <div className="flex items-center justify-center space-x-4">
                 <span className="text-lg font-semibold w-24">Email</span>
                 <a href="mailto:contact@younow.jp" className="text-lg text-cyan-300 hover:text-cyan-200">
-                  sqr1030@gmail.com
+                  younow20210422@gmail.com
                 </a>
               </div>
             </div>
