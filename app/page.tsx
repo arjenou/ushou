@@ -234,25 +234,25 @@ export default function HomePage() {
       </section>
 
       {/* Contact Information */}
-      <section id="contact" className="scroll-offset py-20 bg-gray-900 text-white">
+      <section id="contact" className="scroll-offset py-32 bg-gray-900 text-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Contact US!</h2>
+          <div className="text-center mb-32">
+            <h2 className="text-6xl font-bold">Contact US!</h2>
           </div>
 
-          <div className="max-w-2xl mx-auto">
-            <div className="grid gap-8">
-              <div className="flex items-center justify-center space-x-4">
-                <span className="text-lg font-semibold w-24">住所</span>
-                <span className="text-lg">新宿区百人町3-15-8</span>
+          <div className="max-w-7xl mx-auto pl-96">
+            <div className="flex flex-col gap-24">
+              <div className="flex gap-64">
+                <span className="text-3xl font-semibold min-w-[120px]">住所</span>
+                <span className="text-3xl">新宿区百人町3-15-8</span>
               </div>
-              <div className="flex items-center justify-center space-x-4">
-                <span className="text-lg font-semibold w-24">電話</span>
-                <span className="text-lg">+8107047481030</span>
+              <div className="flex gap-64">
+                <span className="text-3xl font-semibold min-w-[120px]">電話</span>
+                <span className="text-3xl">+8107047481030</span>
               </div>
-              <div className="flex items-center justify-center space-x-4">
-                <span className="text-lg font-semibold w-24">Email</span>
-                <a href="mailto:contact@younow.jp" className="text-lg text-cyan-300 hover:text-cyan-200">
+              <div className="flex gap-64">
+                <span className="text-3xl font-semibold min-w-[120px]">Email</span>
+                <a href="mailto:younow20210422@gmail.com" className="text-3xl text-cyan-300 hover:text-cyan-200">
                   younow20210422@gmail.com
                 </a>
               </div>
