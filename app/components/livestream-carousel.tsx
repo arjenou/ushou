@@ -71,6 +71,14 @@ const liveStreams = [
     platform: "TikTok Live",
     streamer: "MS.佛朗西斯",
   },
+  {
+    id: 9,
+    image: "/images/livestreams/stream9.jpg",
+    title: "チャット配信",
+    viewers: "3.3万",
+    platform: "TikTok Live",
+    streamer: "MS.佛朗西斯",
+  },
 ]
 
 export default function LiveStreamCarousel() {
