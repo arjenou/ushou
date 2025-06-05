@@ -270,11 +270,11 @@ export default function HomePage() {
               <p className="text-gray-400">TikTok Live配信のプロフェッショナル</p>
             </div>
             <div>
-              <h4 className="text-lg font-semibold mb-4">サービス</h4>
+              <h4 className="text-lg font-semibold mb-4">事業内容</h4>
               <ul className="space-y-2 text-gray-400">
                 <li>KOLネットワークPR</li>
                 <li>ライブコマース支援</li>
-                <li>TikTokコンサルティング</li>
+                <li>TikTokショップパートナーサービス</li>
                 <li>ライバー育成</li>
               </ul>
             </div>

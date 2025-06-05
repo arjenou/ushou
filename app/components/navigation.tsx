@@ -39,7 +39,7 @@ export default function Navigation() {
               onClick={() => scrollToSection("services")}
               className="text-gray-700 hover:text-purple-600 transition-colors"
             >
-              サービス
+              事業内容
             </button>
             <button
               onClick={() => scrollToSection("case-studies")}
@@ -72,7 +72,7 @@ export default function Navigation() {
                 onClick={() => scrollToSection("services")}
                 className="text-left text-gray-700 hover:text-purple-600 transition-colors py-2"
               >
-                サービス
+                事業内容
               </button>
               <button
                 onClick={() => scrollToSection("case-studies")}
