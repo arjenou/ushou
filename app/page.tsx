@@ -10,6 +10,7 @@ import Navigation from "./components/navigation"
 import ServiceProcess from "./components/service-process"
 import LiveCommerceFlow from "./components/live-commerce-flow"
 import StrengthsVisual from "./components/strengths-visual"
+import LectureExperimentCarousel from "./components/lecture-experiment-carousel"
 import Image from "next/image"
 
 export default function HomePage() {
@@ -198,6 +199,19 @@ export default function HomePage() {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">事例紹介</h2>
           </div>
           <CaseStudiesCarousel />
+        </div>
+      </section>
+
+      {/* Lecture & Experiment Examples */}
+      <section className="py-20 bg-gradient-to-br from-purple-50 to-pink-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              ライブコマース事業過去活動事例<br />
+              <span className="text-3xl">講義＆実験</span>
+            </h2>
+          </div>
+          <LectureExperimentCarousel />
         </div>
       </section>
 
