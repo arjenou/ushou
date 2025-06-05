@@ -33,7 +33,7 @@ export default function HomePage() {
             </h2>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-12 max-w-3xl">
               私たちは、TikTok Liveの配信者向けに専門的な運営管理サービスを<span className="whitespace-nowrap">提供し、</span>配信者の人気や収益の向上をサポートいたします。<br />
-              または、新規サービスコンテンツにて、TikTokショップパートナー（TSP）として、運営指導、ムービーや配信コンテンツ企画·制作、ショップ管理など、出店するセラーの皆様向けにサービスを提供しており、TikTokショップでのビジネスを効果的に拡大できるよう支援しています。
+              または、新規サービスコンテンツにて、TikTokショップパートナー（TSP）として、運営指導、ムービーや配信コンテンツ企画·制作、ショップ管理など、出店向けにサービスを提供しており、TikTokショップでのビジネスを効果的に拡大できるよう支援しています。
             </p>
             <Button
               size="lg"
