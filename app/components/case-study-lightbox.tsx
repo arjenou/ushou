@@ -40,14 +40,16 @@ export function CaseStudyLightbox({
         <div className="flex flex-col md:grid md:grid-cols-2 h-full max-h-[90vh] md:max-h-full">
           {/* Image section - Maintain aspect ratio on mobile */}
           <div className="relative w-full md:h-full">
-            <div className="md:hidden aspect-[3/4] w-full">
-              <Image
-                src={image}
-                alt={name}
-                fill
-                className="object-cover"
-                priority
-              />
+            <div className="md:hidden w-full h-full flex items-center justify-center p-4">
+              <div className="relative w-full" style={{ maxWidth: '60%', aspectRatio: '3/4' }}>
+                <Image
+                  src={image}
+                  alt={name}
+                  fill
+                  className="object-contain"
+                  priority
+                />
+              </div>
             </div>
             <div className="hidden md:block h-full">
               <Image
