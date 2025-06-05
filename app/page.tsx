@@ -80,13 +80,13 @@ export default function HomePage() {
                     <div className="flex items-start space-x-4">
                       <div className="w-3 h-3 bg-purple-500 rounded-full mt-2"></div>
                       <span className="text-gray-700">
-                        <strong>従業員数:</strong> 孫 綺若
+                        <strong>代表:</strong> 孫 綺若
                       </span>
                     </div>
                     <div className="flex items-start space-x-4">
                       <div className="w-3 h-3 bg-purple-500 rounded-full mt-2"></div>
                       <span className="text-gray-700">
-                        <strong>代表:</strong> 10名（業務委託含む）
+                        <strong>従業員数:</strong> 10名（業務委託含む）
                       </span>
                     </div>
                   </div>
