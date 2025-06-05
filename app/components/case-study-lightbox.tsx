@@ -38,15 +38,26 @@ export function CaseStudyLightbox({
           <X className="absolute cursor-pointer text-white drop-shadow-lg" />
         </div>
         <div className="flex flex-col md:grid md:grid-cols-2 h-full max-h-[90vh] md:max-h-full">
-          {/* Image section - Smaller on mobile */}
-          <div className="relative h-[35vh] md:h-full">
-            <Image
-              src={image}
-              alt={name}
-              fill
-              className="object-cover"
-              priority
-            />
+          {/* Image section - Maintain aspect ratio on mobile */}
+          <div className="relative w-full md:h-full">
+            <div className="md:hidden aspect-[3/4] w-full">
+              <Image
+                src={image}
+                alt={name}
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+            <div className="hidden md:block h-full">
+              <Image
+                src={image}
+                alt={name}
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
           </div>
           {/* Content section - Scrollable on mobile */}
           <div className="flex-1 overflow-y-auto p-4 md:p-6 bg-white">

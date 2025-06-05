@@ -61,6 +61,12 @@ const talents = [
     image: "/images/artists/artist9.jpg",
     category: "モデル",
   },
+  {
+    id: 8,
+    name: "wuming",
+    image: "/images/artists/artist10.jpg",
+    category: "モデル",
+  }
 ]
 
 export default function TalentCarousel() {
