@@ -240,19 +240,19 @@ export default function HomePage() {
             <h2 className="text-6xl font-bold">Contact US!</h2>
           </div>
 
-          <div className="max-w-6xl mx-auto pl-48">
+          <div className="max-w-6xl mx-auto pl-4 md:pl-48">
             <div className="flex flex-col gap-24">
-              <div className="flex gap-48">
-                <span className="text-3xl font-semibold min-w-[120px]">住所</span>
-                <span className="text-3xl">新宿区百人町3-15-8</span>
+              <div className="flex flex-col md:flex-row gap-4 md:gap-48">
+                <span className="text-2xl md:text-3xl font-semibold min-w-[120px]">住所</span>
+                <span className="text-2xl md:text-3xl">新宿区百人町3-15-8</span>
               </div>
-              <div className="flex gap-48">
-                <span className="text-3xl font-semibold min-w-[120px]">電話</span>
-                <span className="text-3xl">+8107047481030</span>
+              <div className="flex flex-col md:flex-row gap-4 md:gap-48">
+                <span className="text-2xl md:text-3xl font-semibold min-w-[120px]">電話</span>
+                <span className="text-2xl md:text-3xl">+8107047481030</span>
               </div>
-              <div className="flex gap-48">
-                <span className="text-3xl font-semibold min-w-[120px]">Email</span>
-                <a href="mailto:younow20210422@gmail.com" className="text-3xl text-cyan-300 hover:text-cyan-200">
+              <div className="flex flex-col md:flex-row gap-4 md:gap-48">
+                <span className="text-2xl md:text-3xl font-semibold min-w-[120px]">Email</span>
+                <a href="mailto:younow20210422@gmail.com" className="text-2xl md:text-3xl text-cyan-300 hover:text-cyan-200 break-all md:break-normal">
                   younow20210422@gmail.com
                 </a>
               </div>
