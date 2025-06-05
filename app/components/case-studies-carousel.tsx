@@ -5,7 +5,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import Image from "next/image"
+import { CaseStudyLightbox } from "./case-study-lightbox"
 
 // 成功事例数据
 const caseStudies = [
@@ -17,6 +17,9 @@ const caseStudies = [
         description: "ゼロからスタートで短期間で上位進出",
         badge: "事例",
         badgeColor: "bg-green-100 text-green-800",
+        details: `ライブ配信では経験なく、ゼロからスタートでしたが、2ヵ⽉⽬に投げ銭のコイン数が200万超え、イベント上位に進出しています。
+またはtiktokファンの集客により、ソロ対⾯ライブーや、物販販売などのリアルイベント企画も実施しております。
+これからはIP影響⼒をUpさせるために、動画投稿に⼒を⼊れていきます。`,
     },
     {
         id: 2,
@@ -26,6 +29,9 @@ const caseStudies = [
         description: "モデル×自社ブランドの認知度向上",
         badge: "ブランド連携",
         badgeColor: "bg-blue-100 text-blue-800",
+        details: `本⼈はモデルと⾃社ブランドを持ちで、認知度をあげるためにTikTokでライブ配信を⾏なっ
+ています。TikTok内イベント参加の作戦や、PR案件のご紹介、撮影などのサポートを実施し
+ております。`,
     },
     {
         id: 3,
@@ -35,9 +41,9 @@ const caseStudies = [
         description: "複数プラットフォームでの総合成長支援",
         badge: "総合支援",
         badgeColor: "bg-purple-100 text-purple-800",
+        details: `様々なポジションにてマネジメントとサポートをしています。`,
     },
 ]
-
 
 export default function CaseStudiesCarousel() {
     const [currentIndex, setCurrentIndex] = useState(0)
@@ -156,15 +162,13 @@ export default function CaseStudiesCarousel() {
                                     <CardTitle className="text-xl mb-4">{caseStudy.name}</CardTitle>
                                     {/* 修改图片为矩形，等比例缩放 */}
                                     <div className="flex justify-center mb-4">
-                                        <div className="w-40 h-56 sm:w-48 sm:h-64 lg:w-56 lg:h-72 overflow-hidden rounded-xl shadow-md">
-                                            <Image
-                                                src={caseStudy.image}
-                                                alt={caseStudy.name}
-                                                width={224}
-                                                height={288}
-                                                className="w-full h-full object-cover"
-                                            />
-                                        </div>
+                                        <CaseStudyLightbox
+                                            image={caseStudy.image}
+                                            name={caseStudy.name}
+                                            title={caseStudy.title}
+                                            description={caseStudy.description}
+                                            details={caseStudy.details}
+                                        />
                                     </div>
                                 </CardHeader>
                                 <CardContent className="text-center">

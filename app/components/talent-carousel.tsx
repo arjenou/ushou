@@ -55,6 +55,12 @@ const talents = [
     image: "/images/artists/artist8.jpg",
     category: "ダンサー",
   },
+  {
+    id: 7,
+    name: "himari",
+    image: "/images/artists/artist9.jpg",
+    category: "モデル",
+  },
 ]
 
 export default function TalentCarousel() {
