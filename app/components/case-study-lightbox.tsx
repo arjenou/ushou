@@ -3,6 +3,7 @@
 import * as React from "react"
 import Image from "next/image"
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
+import { X } from "lucide-react"
 
 interface CaseStudyLightboxProps {
   image: string
@@ -32,10 +33,13 @@ export function CaseStudyLightbox({
           />
         </div>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[900px] h-[80vh] p-0 gap-0">
-        <div className="grid grid-cols-1 md:grid-cols-2 h-full">
-          {/* Left side - Image */}
-          <div className="relative h-[300px] md:h-full">
+      <DialogContent className="sm:max-w-[900px] max-h-[90vh] md:h-[80vh] p-0 gap-0">
+        <div className="relative w-6 h-6 ml-auto mr-2 mt-2 md:hidden">
+          <X className="absolute cursor-pointer text-white drop-shadow-lg" />
+        </div>
+        <div className="flex flex-col md:grid md:grid-cols-2 h-full max-h-[90vh] md:max-h-full">
+          {/* Image section - Smaller on mobile */}
+          <div className="relative h-[35vh] md:h-full">
             <Image
               src={image}
               alt={name}
@@ -44,8 +48,8 @@ export function CaseStudyLightbox({
               priority
             />
           </div>
-          {/* Right side - Content */}
-          <div className="p-6 overflow-y-auto">
+          {/* Content section - Scrollable on mobile */}
+          <div className="flex-1 overflow-y-auto p-4 md:p-6 bg-white">
             <h2 className="text-2xl font-bold mb-2">{title}</h2>
             <h3 className="text-xl mb-4">{name}</h3>
             <p className="text-gray-600 mb-6">{description}</p>
