@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'You Now! - TikTok配信者向けプロフェッショナル | U尚合同会社',
     description: 'U尚合同会社のYou Now!は、TikTok Liveの配信者向けに専門的な運営管理サービスを提供。ライブコマース支援、ライバー育成、TikTokショップパートナー（TSP）として、効果的なビジネス展開をサポートいたします。',
-    url: 'https://younow.jp',
+    url: 'https://younow.co.jp',
     siteName: 'You Now!',
     locale: 'ja_JP',
     type: 'website',
@@ -26,10 +26,10 @@ export const metadata: Metadata = {
   },
   viewport: 'width=device-width, initial-scale=1',
   verification: {
-    google: 'google4bc874927d189853', // Google Search Consoleで取得したコードを入れてください
+    google: 'google4bc874927d189853', 
   },
   alternates: {
-    canonical: 'https://younow.jp',
+    canonical: 'https://younow.co.jp',
   },
 }
 
