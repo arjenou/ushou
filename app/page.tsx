@@ -19,29 +19,6 @@ export default function HomePage() {
       {/* Navigation */}
       <Navigation />
 
-      {/* SEO Optimized Company Information */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">
-              U尚合作会社・U尚合同会社について
-            </h2>
-            <div className="text-gray-700 leading-relaxed space-y-4">
-              <p>
-                <strong>U尚合作会社・U尚合同会社</strong>は、2021年に設立されたTikTok Live配信者向けのプロフェッショナルサービスを提供する企業です。
-                東京都新宿区百人町3-15-8に本社を置き、代表取締役の孫綺若氏が率いる<strong>U尚合作会社・U尚合同会社</strong>は、
-                ライブコマース支援、ライバー育成、TikTokショップパートナー（TSP）サービスを専門としています。
-              </p>
-              <p>
-                <strong>U尚合作会社・U尚合同会社</strong>のYou Now!ブランドは、TikTok Live配信者の成功をサポートし、
-                効果的なビジネス展開を実現するための包括的なソリューションを提供いたします。
-                私たちの専門知識と豊富な経験により、配信者の人気と収益の向上を実現します。
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-pink-300 via-purple-200 to-cyan-200">
         <div className="container mx-auto px-4">
