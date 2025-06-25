@@ -19,6 +19,29 @@ export default function HomePage() {
       {/* Navigation */}
       <Navigation />
 
+      {/* SEO Optimized Company Information */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8">
+              U尚合作会社・U尚合同会社について
+            </h2>
+            <div className="text-gray-700 leading-relaxed space-y-4">
+              <p>
+                <strong>U尚合作会社・U尚合同会社</strong>は、2021年に設立されたTikTok Live配信者向けのプロフェッショナルサービスを提供する企業です。
+                東京都新宿区百人町3-15-8に本社を置き、代表取締役の孫綺若氏が率いる<strong>U尚合作会社・U尚合同会社</strong>は、
+                ライブコマース支援、ライバー育成、TikTokショップパートナー（TSP）サービスを専門としています。
+              </p>
+              <p>
+                <strong>U尚合作会社・U尚合同会社</strong>のYou Now!ブランドは、TikTok Live配信者の成功をサポートし、
+                効果的なビジネス展開を実現するための包括的なソリューションを提供いたします。
+                私たちの専門知識と豊富な経験により、配信者の人気と収益の向上を実現します。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-pink-300 via-purple-200 to-cyan-200">
         <div className="container mx-auto px-4">
@@ -32,7 +55,7 @@ export default function HomePage() {
               </span>
             </h2>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-12 max-w-3xl">
-              私たちは、TikTok Liveの配信者向けに専門的な運営管理サービスを<span className="whitespace-nowrap">提供し、</span>配信者の人気や収益の向上をサポートいたします。<br />
+              <strong>U尚合作会社・U尚合同会社</strong>のYou Now!は、TikTok Liveの配信者向けに専門的な運営管理サービスを<span className="whitespace-nowrap">提供し、</span>配信者の人気や収益の向上をサポートいたします。<br />
               または、新規サービスコンテンツにて、TikTokショップパートナー（TSP）として、運営指導、ムービーや配信コンテンツ企画·制作、ショップ管理など、出店様向けにサービスを提供しており、TikTokショップでのビジネスを効果的に拡大できるよう支援しています。
             </p>
             <Button
@@ -63,8 +86,14 @@ export default function HomePage() {
               {/* Left: Company Information */}
               <div className="space-y-6">
                 <div className="bg-white p-8 rounded-2xl shadow-lg">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-6">U尚合同会社 | You Now!</h3>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-6">U尚合作会社・U尚合同会社 | You Now!</h3>
                   <div className="space-y-4 mb-6">
+                    <div className="flex items-start space-x-4">
+                      <div className="w-3 h-3 bg-purple-500 rounded-full mt-2"></div>
+                      <span className="text-gray-700">
+                        <strong>会社名:</strong> U尚合作会社・U尚合同会社
+                      </span>
+                    </div>
                     <div className="flex items-start space-x-4">
                       <div className="w-3 h-3 bg-purple-500 rounded-full mt-2"></div>
                       <span className="text-gray-700">
@@ -93,10 +122,10 @@ export default function HomePage() {
 
                   <div className="text-gray-600 leading-relaxed space-y-4">
                     <p>
-                      孫は、自媒体業界において4年間の実務経験を有しており、その経験を活かし2021年に当社を設立いたしました。設立当初は、エンターテイメント系のライブ配信に特化し、プロフェッショナルなマネジメントサービスを提供することで、プラットフォームにおいて優質なライバーを数多く輩出してまいりました。
+                      <strong>U尚合作会社・U尚合同会社</strong>の代表である孫は、自媒体業界において4年間の実務経験を有しており、その経験を活かし2021年に当社を設立いたしました。設立当初は、エンターテイメント系のライブ配信に特化し、プロフェッショナルなマネジメントサービスを提供することで、プラットフォームにおいて優質なライバーを数多く輩出してまいりました。
                     </p>
                     <p>
-                      長年の実績と豊富な経験を活かし、近年では、事業領域を拡大し、ライブコマース、広告宣伝、ショート動画制作など、メディア関連事業を多角的に展開しております。
+                      長年の実績と豊富な経験を活かし、近年では、事業領域を拡大し、ライブコマース、広告宣伝、ショート動画制作など、メディア関連事業を多角的に展開しております。<strong>U尚合作会社・U尚合同会社</strong>として、TikTok Live配信者の成功をサポートし、効果的なビジネス展開を実現いたします。
                     </p>
                   </div>
                 </div>
@@ -289,7 +318,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 U尚合同会社 You Now! All rights reserved.</p>
+            <p>&copy; 2025 U尚合作会社・U尚合同会社 You Now! All rights reserved.</p>
           </div>
         </div>
       </footer>
